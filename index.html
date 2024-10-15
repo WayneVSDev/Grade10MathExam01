@@ -76,8 +76,145 @@
     </ul>
 
     <form id="examForm">
-        <!-- (The questions remain the same as in the previous version) -->
-        <!-- ... -->
+        <h3>Section A: Short Answer Questions (40 marks)</h3>
+
+        <div class="question">
+            <p class="question-number">1. (4 marks)</p>
+            <p>Solve for x: 2(x + 3) - 5 = 3x - 7</p>
+            <input type="text" id="q1" required>
+            <div class="review" id="review1"></div>
+        </div>
+
+        <div class="question">
+            <p class="question-number">2. (4 marks)</p>
+            <p>Factorise completely: 3x² - 27</p>
+            <input type="text" id="q2" required>
+            <div class="review" id="review2"></div>
+        </div>
+
+        <div class="question">
+            <p class="question-number">3. (4 marks)</p>
+            <p>Find the gradient and y-intercept of the line 2y - 3x = 6</p>
+            <p>Gradient: <input type="text" id="q3a" required></p>
+            <p>y-intercept: <input type="text" id="q3b" required></p>
+            <div class="review" id="review3"></div>
+        </div>
+
+        <div class="question">
+            <p class="question-number">4. (4 marks)</p>
+            <p>Simplify: (2³ × 4²) ÷ 2⁵</p>
+            <input type="text" id="q4" required>
+            <div class="review" id="review4"></div>
+        </div>
+
+        <div class="question">
+            <p class="question-number">5. (4 marks)</p>
+            <p>Solve the simultaneous equations:<br>
+               x + y = 7<br>
+               2x - y = 1</p>
+            <p>x = <input type="text" id="q5a" required></p>
+            <p>y = <input type="text" id="q5b" required></p>
+            <div class="review" id="review5"></div>
+        </div>
+
+        <h3>Section B: Extended Response Questions (60 marks)</h3>
+
+        <div class="question">
+            <p class="question-number">6. (15 marks)</p>
+            <p>A rectangle has a length that is 5 cm more than twice its width. The perimeter of the rectangle is 70 cm.</p>
+            <ol type="a">
+                <li>Let the width of the rectangle be x cm. Write an expression for the length of the rectangle in terms of x. (2 marks)
+                    <input type="text" id="q6a" required>
+                </li>
+                <li>Form an equation using the information about the perimeter and solve it to find x. (8 marks)
+                    <p>x = <input type="text" id="q6b" required></p>
+                </li>
+                <li>Calculate the area of the rectangle. (5 marks)
+                    <input type="text" id="q6c" required>
+                </li>
+            </ol>
+            <div class="review" id="review6"></div>
+        </div>
+
+        <div class="question">
+            <p class="question-number">7. (15 marks)</p>
+            <p>The quadratic function f(x) = x² - 6x + 5 is given.</p>
+            <ol type="a">
+                <li>Find the x-intercepts of the function. (6 marks)
+                    <p>x₁ = <input type="text" id="q7a1" required></p>
+                    <p>x₂ = <input type="text" id="q7a2" required></p>
+                </li>
+                <li>Find the coordinates of the vertex of the parabola. (6 marks)
+                    <p>x = <input type="text" id="q7b1" required></p>
+                    <p>y = <input type="text" id="q7b2" required></p>
+                </li>
+                <li>Sketch the graph of the function, clearly labeling all important points. (3 marks)
+                    <p>(This part will be graded manually)</p>
+                </li>
+            </ol>
+            <div class="review" id="review7"></div>
+        </div>
+
+        <div class="question">
+            <p class="question-number">8. (15 marks)</p>
+            <p>A survey was conducted to determine the number of hours students spend on social media per day. The results for 50 students are summarized in the table below:</p>
+            <table border="1" cellpadding="5">
+                <tr>
+                    <th>Hours</th>
+                    <th>Frequency</th>
+                </tr>
+                <tr>
+                    <td>0 - 2</td>
+                    <td>15</td>
+                </tr>
+                <tr>
+                    <td>2 - 4</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>4 - 6</td>
+                    <td>10</td>
+                </tr>
+                <tr>
+                    <td>6 - 8</td>
+                    <td>5</td>
+                </tr>
+            </table>
+            <ol type="a">
+                <li>Calculate the mean number of hours spent on social media. (6 marks)
+                    <input type="text" id="q8a" required>
+                </li>
+                <li>Determine the median class and the modal class. (4 marks)
+                    <p>Median class: <input type="text" id="q8b1" required></p>
+                    <p>Modal class: <input type="text" id="q8b2" required></p>
+                </li>
+                <li>Draw a histogram to represent this data. (5 marks)
+                    <p>(This part will be graded manually)</p>
+                </li>
+            </ol>
+            <div class="review" id="review8"></div>
+        </div>
+
+        <div class="question">
+            <p class="question-number">9. (15 marks)</p>
+            <p>In a right-angled triangle ABC, angle B is the right angle. AC = 13 cm and BC = 5 cm.</p>
+            <ol type="a">
+                <li>Calculate the length of AB. (4 marks)
+                    <input type="text" id="q9a" required>
+                </li>
+                <li>Find the size of angle A and angle C. (6 marks)
+                    <p>Angle A: <input type="text" id="q9b1" required></p>
+                    <p>Angle C: <input type="text" id="q9b2" required></p>
+                </li>
+                <li>Calculate the area of the triangle. (3 marks)
+                    <input type="text" id="q9c" required>
+                </li>
+                <li>If the triangle is rotated about BC to form a cone, calculate the volume of the cone. (Give your answer in terms of π) (2 marks)
+                    <input type="text" id="q9d" required>
+                </li>
+            </ol>
+            <div class="review" id="review9"></div>
+        </div>
 
         <button type="submit">Submit</button>
     </form>
