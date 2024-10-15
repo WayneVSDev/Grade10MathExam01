@@ -44,10 +44,6 @@
         #result {
             margin-top: 20px;
             font-weight: bold;
-            font-size: 1.2em;
-            padding: 10px;
-            background-color: #f0f0f0;
-            border-radius: 5px;
         }
         .correct {
             color: green;
@@ -266,17 +262,12 @@
                 }
                 
                 let reviewId = 'review' + key.replace(/[a-z]/g, '');
-                let reviewElement = document.getElementById(reviewId);
-                if (reviewElement) {
-                    reviewElement.innerHTML = `Correct answer: ${answers[key]}`;
-                    reviewElement.style.display = 'block';
-                }
+                document.getElementById(reviewId).innerHTML = `Correct answer: ${answers[key]}`;
+                document.getElementById(reviewId).style.display = 'block';
             }
 
             let percentage = (score / totalQuestions) * 100;
-            let resultElement = document.getElementById('result');
-            resultElement.innerHTML = `Your score: ${score} out of ${totalQuestions} (${percentage.toFixed(2)}%)`;
-            resultElement.scrollIntoView({ behavior: 'smooth' });
+            document.getElementById('result').innerHTML = `Your score: ${score} out of ${totalQuestions} (${percentage.toFixed(2)}%)`;
         });
     </script>
 </body>
